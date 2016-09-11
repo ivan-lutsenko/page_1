@@ -312,3 +312,15 @@ footer{
 }
 
 .soc img{cursor: pointer;}
+
+@media screen and (max-width: 990px) {
+	.pad1.inl{
+		display: block;
+    	margin: 0 auto;
+    	max-width: 500px;
+		width: 95%;
+	}
+	.masthead .section img{
+		width: 95%;
+	}
+}
