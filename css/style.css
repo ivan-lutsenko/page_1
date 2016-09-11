@@ -1,0 +1,314 @@
+body, html{
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+}
+
+.inl{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.clear:before, .clear:after{
+	content: "";
+	display: table;
+}
+
+.clear:after{
+	clear: both;
+}
+
+.left{float: left;}
+
+.right{float: right;}
+
+.masthead{
+	position: relative;
+	overflow: hidden;
+}
+
+.masthead img{
+	width: 100%;
+	height: auto;
+}
+
+.masthead .headline{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+.ots{margin-top: 150px;}
+
+.text{
+	padding: 10px;
+	margin: 0 auto;
+	text-align: center;
+	max-width: 800px;
+	width: 85%;
+	color: #fff;
+	font-size: 50px;
+	font-family: "Robot";
+	line-height: 1.2;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.ots button{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 14px;
+  	font-family: "Montserrat";
+	color: #fff;
+	margin: 0 auto;
+	display: block;
+	padding: 15px;
+	background: #6fb048;
+	border: none;
+	margin-top: 45px;
+
+	cursor: pointer;
+}
+
+.section-about-us{
+	background: #ffffff;
+	/*background: #4E74C2;*/
+	padding-top: 8em;
+	padding-bottom: 13em;
+	text-align: center;
+	margin-top: -5px;
+	color: #83a7a5;
+}
+
+.section-heading{
+	font-family: "Robot";
+	font-size: 32px;
+}
+
+.line{
+	width: 65px;
+	margin: 0 auto;
+	padding: 1px;
+	background: #fff;
+	margin-top: 25px;
+	margin-bottom: 45px;
+	background: #6fb048;
+}
+
+.text2{
+	font-size: 22px;
+	font-family: "Myriad Pro";
+	max-width: 703px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.section{margin-top: 90px;}
+
+.section .pad img{
+	width: 20%;
+	height: auto;
+}
+
+.text-1{margin-top: 37px;}
+
+.text-2{margin-top: 30px;}
+
+.text-3{margin-top: 45px;}
+
+.pad{
+	padding: 10px;
+	/*background: #3899A2;*/
+	width: 20%;
+	font-size: 20px;
+  	font-family: "Roboto";
+}
+
+.pad1{
+	padding: 10px;
+	/*background: #3D69CC;*/
+	text-align: left;
+}
+
+.text3{
+	margin-top: 25px;
+	font-size: 18px;
+	font-family: "Roboto";
+	max-width: 288px;
+	width: 100%;
+}
+
+.section-our-team{
+	background: #eef1ec;
+	padding-top: 8em;
+	padding-bottom: 13em;
+	text-align: center;
+	margin-top: -5px;
+	color: #83a7a5;
+}
+
+.section .pad1 img{
+	border: 1px solid #fff;
+}
+
+.name{
+	margin-top: 20px;
+	font-size: 18px;
+	font-family: "Roboto";
+	color: rgb(15, 95, 92);
+}
+
+.prof{
+	margin-top: 5px;
+	font-size: 16px;
+	font-family: "Robot";
+}
+
+.call-to-action{
+	background-image: url('../img/layer-2.png');
+	height: 200px;
+	color: #FFF;
+	font-family: "Myriad Pro";
+
+}
+
+.ots-1{
+	padding-top: 75px;
+	padding-left: 220px;
+}
+
+.tx-1{font-size: 28px;}
+
+.tx-2{
+	font-size: 15px;
+	margin-top: 5px;
+}
+
+.p-button{
+	/*padding: 10px;
+  	background: #915454;*/
+  	margin-left: 260px;
+}
+
+.p-button button{
+	border-radius: 2px;
+	background-color: rgb(73, 115, 47);
+	width: 285px;
+	height: 42px;
+	border: none;
+}
+
+.p-button button span{
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+footer{
+	padding-top: 95px;
+	padding-bottom: 20px;
+	background: #fff;
+	font-family: "Myriad Pro";
+}
+
+.margin{margin-left: 90px;}
+
+.margin-icon{margin-left: 5px;}
+
+.top-footer{
+	/*padding: 20px;
+	background: #24D846;*/
+	margin: 0 auto;
+	max-width: 1100px;
+	width: 100%;
+	padding-bottom: 60px;
+	border-bottom: 1px solid #eef1ec;
+}
+
+.info, .company, .others, .newsletter{
+	padding: 20px;
+	/*background: #EF209F;*/
+}
+
+.info{
+	font-size: 13px;
+	color: rgb(15, 95, 92);
+	text-transform: uppercase;
+	width: 220px;
+}
+
+.info-tx{
+	margin-top: 5px;
+	color: rgb(131, 167, 165);
+	line-height: 2.154;
+	width: 114px;
+	text-transform: none;
+}
+
+.newsletter-tx{
+	margin-top: 5px;
+	font-size: 13px;
+	font-family: "Myriad Pro";
+	color: rgb(131, 167, 165);
+	width: 210px;
+}
+
+.info-tx .info-tx-tx{width: 200px;}
+
+.company, .others, .newsletter{
+	font-size: 13px;
+	font-family: "Roboto";
+	color: rgb(15, 95, 92);
+}
+
+.company-menu, .others-menu{margin-top: 5px;}
+
+.company-menu ul, .others-menu ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+.company-menu ul li, .others-menu ul li{list-style-type: none;}
+
+.company-menu ul li a, .others-menu ul li a{
+	text-decoration: none;
+	display: block;
+	padding: 5px 0px;
+	color: rgb(131, 167, 165);
+}
+
+.newsletter input{
+	margin-top: 20px;
+	border-radius: 3px;
+	background-color: rgb(238, 241, 236);
+	padding: 10px;
+	border: none;
+	width: 240px;
+	background-image: url('../img/vector.png');   
+    background-repeat: no-repeat;  
+    background-position: 220px;
+}
+
+.bottom-footer{
+	padding: 10px;
+	/*background: #2243D0;*/
+
+	margin: 0 auto;
+	max-width: 1100px;
+	width: 100%;
+	margin-top: 30px;
+}
+
+.text-k{
+	float: left;
+	font-size: 12px;
+	font-family: "Myriad Pro";
+	color: rgb(131, 167, 165);
+}
+
+.soc{
+	float: right;
+	margin-right: 30px;
+}
+
+.soc img{cursor: pointer;}
