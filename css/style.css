@@ -27,7 +27,7 @@ body, html{
 	overflow: hidden;
 }
 
-.masthead img{
+.masthead img, .back{
 	width: 100%;
 	height: auto;
 }
@@ -103,11 +103,15 @@ body, html{
 	margin: 0 auto;
 }
 
-.section{margin-top: 90px;}
+.section, .section1{margin-top: 90px;}
 
 .section .pad img{
 	width: 20%;
 	height: auto;
+}
+
+.section .pad1 img{
+	border: 1px solid #fff;
 }
 
 .text-1{margin-top: 37px;}
@@ -145,10 +149,6 @@ body, html{
 	text-align: center;
 	margin-top: -5px;
 	color: #83a7a5;
-}
-
-.section .pad1 img{
-	border: 1px solid #fff;
 }
 
 .name{
@@ -313,14 +313,159 @@ footer{
 
 .soc img{cursor: pointer;}
 
-@media screen and (max-width: 990px) {
-	.pad1.inl{
-		display: block;
-    	margin: 0 auto;
-    	max-width: 500px;
-		width: 95%;
+@media screen and (max-width: 990px){
+	/*Главная картинка*/
+	.masthead .back{
+		width: inherit;
+		height: auto;
 	}
-	.masthead .section img{
-		width: 95%;
+
+	/*About Us*/
+	.section .pad{
+		width: 26%;
+	}
+
+	.section-about-us, .section-our-team{
+    	padding-top: 20px;
+    	padding-bottom: 30px;
+	}
+
+	/*Разработчики*/
+	.section1 .pad1{
+		width: 26%;
+	}
+
+	/*Do you like*/
+	.ots-1{
+    	padding-top: 20px;
+    	padding-left: 20px;
+	}
+	
+	.p-button{
+		display: block;
+		margin-left: 0px;
+		margin-top: 10px;
+	}
+
+	.call-to-action{
+		height: 160px;
+	}
+
+	/*footer*/
+	.info, .company, .others, .newsletter{
+    	padding: 10px;
+    	width: 45%;
+	}
+
+	.margin{
+    	margin-left: 0px;
+	}
+
+	.newsletter input{
+		width: 200px;
+		background-position: 180px;
+	}
+
+	.info-tx, .info-tx .info-tx-tx{
+		width: initial;
+	}
+
+	footer{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.top-footer{
+		padding-bottom: 25px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	/*Главная картинка*/
+	.ots{
+		margin-top: 20px;
+	}
+
+	.text{
+		font-size: 30px;
+	}
+
+	.ots button{
+    	margin-top: 20px;
+	}
+
+	/*About Us*/
+	.line{
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	.text2{
+    	width: 95%;
+    	font-size: 17px;
+	}
+
+	.section, .section1{
+    	margin-top: 20px;
+	}
+
+	.section .pad{
+    	width: 90%;
+	}
+
+	.section .pad img {
+    	width: 10%;
+	}
+
+	.text3{
+		margin: 0 auto;
+		margin-top: 25px;
+		font-size: 17px;
+	}
+
+	.section-heading{
+    	font-size: 25px;
+	}
+
+	/*Разработчики*/
+	.section1 .pad1 {
+    	width: 90%;
+	}
+
+	/*Do you like*/
+	.call-to-action{
+    	height: 145px;
+	}
+
+	.tx-1{
+    	font-size: 18px;
+	}
+
+	.tx-2{
+    	font-size: 13px;
+	}
+
+	.p-button button{
+    	width: initial;
+    	height: initial;
+    	padding: 10px;
+	}
+
+	/*footer*/
+	.info, .company, .others, .newsletter{
+    	width: 95%;
+	}
+
+	.text-k{
+		float: none;
+	}
+
+	.soc{
+		float: none;
+		margin-top: 10px;
+	}
+
+	.bottom-footer{
+		margin-top: 20px;
 	}
 }
