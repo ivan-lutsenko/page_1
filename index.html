@@ -5,10 +5,49 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Wapik</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var touch = $('.touch-menu');
+		    var menu = $('.nav');
+		    $(touch).on('click', function(e) {
+		        e.preventDefault();
+		        menu.slideToggle();
+		    });
+		});
+	</script>
 </head>
 <body>
 	<header>
-		Menu
+		<div class="center clear">
+			<div class="left">
+				<div class="inl wapik">
+					wapik
+				</div>
+				<div class="inl phone">
+					<img src="img/phone.png" alt="phone">
+				</div>
+				<div class="inl phone-text">
+					+62 202 555 0117
+				</div>
+			</div>
+			<a href="#" class="touch-menu right">
+				<span></span>
+				<span class="oy"></span>
+				<span class="oy"></span>
+			</a>
+			<div class="right">
+				<nav class="nav">
+					<ul>
+						<li><a href="#">home</a></li>
+						<li><a href="#">about us</a></li>
+						<li><a href="#">pricing</a></li>
+						<li><a href="#">contact us</a></li>
+						<li><a href="#">get started</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
 	</header>
 	<div class="masthead">
 		<img class="back" src="img/background.png" alt="background">

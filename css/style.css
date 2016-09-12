@@ -4,6 +4,89 @@ body, html{
 	overflow-x: hidden;
 }
 
+header{
+	padding: 20px;
+	background: #659394;
+}
+
+.center{
+	max-width: 1056px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.wapik{
+	font-size: 18px;
+	font-family: "Myriad Pro";
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	font-weight: bold;
+	border-right: 1px solid #669495;
+	padding: 10px 20px;
+}
+
+.phone{
+	padding: 10px 20px;
+	padding-left: 20px;
+}
+
+.phone-text{
+	font-size: 16px;
+	font-family: "Myriad Pro";
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	padding: 10px 0px;
+}
+
+.touch-menu{
+	padding: 10px;
+	background: #7B4343;
+	display: none;
+	border-radius: 2px;
+	background: #c5bfbf;
+}
+
+.touch-menu span{
+	display: block;
+	width: 20px;
+	padding: 1px;
+	background: #FFFFFF;
+}
+
+.touch-menu .oy{margin-top: 3px;}
+
+.nav ul{
+	padding: 0px;
+	margin: 0px;
+}
+
+.nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	margin-left: 25px;
+}
+
+.nav ul li a{
+	display: block;
+	padding: 10px 20px;
+	font-size: 13px;
+	font-family: "Myriad Pro";
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	border-radius: 2px;
+}
+
+.nav ul li:first-child{margin-left: 0px;}
+
+.nav ul li:active, .nav ul li a:hover{
+	background-color: rgb(255, 255, 255);
+	opacity: 0.349;
+	color: #382C2C;	
+}
+
 .inl{
 	display: inline-block;
 	vertical-align: top;
@@ -14,9 +97,7 @@ body, html{
 	display: table;
 }
 
-.clear:after{
-	clear: both;
-}
+.clear:after{clear: both;}
 
 .left{float: left;}
 
@@ -66,13 +147,11 @@ body, html{
 	background: #6fb048;
 	border: none;
 	margin-top: 45px;
-
 	cursor: pointer;
 }
 
 .section-about-us{
 	background: #ffffff;
-	/*background: #4E74C2;*/
 	padding-top: 8em;
 	padding-bottom: 13em;
 	text-align: center;
@@ -110,9 +189,7 @@ body, html{
 	height: auto;
 }
 
-.section .pad1 img{
-	border: 1px solid #fff;
-}
+.section .pad1 img{border: 1px solid #fff;}
 
 .text-1{margin-top: 37px;}
 
@@ -122,7 +199,6 @@ body, html{
 
 .pad{
 	padding: 10px;
-	/*background: #3899A2;*/
 	width: 20%;
 	font-size: 20px;
   	font-family: "Roboto";
@@ -130,7 +206,6 @@ body, html{
 
 .pad1{
 	padding: 10px;
-	/*background: #3D69CC;*/
 	text-align: left;
 }
 
@@ -184,11 +259,7 @@ body, html{
 	margin-top: 5px;
 }
 
-.p-button{
-	/*padding: 10px;
-  	background: #915454;*/
-  	margin-left: 260px;
-}
+.p-button{margin-left: 260px;}
 
 .p-button button{
 	border-radius: 2px;
@@ -196,6 +267,7 @@ body, html{
 	width: 285px;
 	height: 42px;
 	border: none;
+	cursor: pointer;
 }
 
 .p-button button span{
@@ -216,8 +288,6 @@ footer{
 .margin-icon{margin-left: 5px;}
 
 .top-footer{
-	/*padding: 20px;
-	background: #24D846;*/
 	margin: 0 auto;
 	max-width: 1100px;
 	width: 100%;
@@ -227,7 +297,6 @@ footer{
 
 .info, .company, .others, .newsletter{
 	padding: 20px;
-	/*background: #EF209F;*/
 }
 
 .info{
@@ -291,8 +360,6 @@ footer{
 
 .bottom-footer{
 	padding: 10px;
-	/*background: #2243D0;*/
-
 	margin: 0 auto;
 	max-width: 1100px;
 	width: 100%;
@@ -314,28 +381,57 @@ footer{
 .soc img{cursor: pointer;}
 
 @media screen and (max-width: 990px){
-	/*Главная картинка*/
+	.wapik{padding: 10px 0px;}
+
+	.phone{
+		padding: 12px 5px;
+    	padding-left: 5px;
+	}
+
+	header{position: relative;}
+
+	.touch-menu{display: block;}
+
+	.nav{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 100%;
+		z-index: 10;
+		display: none;
+		background: #659394;
+	}
+
+	.nav ul li{
+		display: block;
+		margin-left: 0px;
+	}
+
+	.nav ul li a{
+		padding: 15px 20px;
+	}
+
+	.nav ul li a:hover{
+		background: #554CC8;
+		color: #221F1F;
+		opacity: 1;
+		border-right: 5px solid #482A2A;
+	}
+	
 	.masthead .back{
 		width: inherit;
 		height: auto;
 	}
 
-	/*About Us*/
-	.section .pad{
-		width: 26%;
-	}
+	.section .pad{width: 26%;}
 
 	.section-about-us, .section-our-team{
     	padding-top: 20px;
     	padding-bottom: 30px;
 	}
 
-	/*Разработчики*/
-	.section1 .pad1{
-		width: 26%;
-	}
+	.section1 .pad1{width: 26%;}
 
-	/*Do you like*/
 	.ots-1{
     	padding-top: 20px;
     	padding-left: 20px;
@@ -347,54 +443,37 @@ footer{
 		margin-top: 10px;
 	}
 
-	.call-to-action{
-		height: 160px;
-	}
+	.call-to-action{height: 160px;}
 
-	/*footer*/
 	.info, .company, .others, .newsletter{
     	padding: 10px;
     	width: 45%;
 	}
 
-	.margin{
-    	margin-left: 0px;
-	}
+	.margin{margin-left: 0px;}
 
 	.newsletter input{
 		width: 200px;
 		background-position: 180px;
 	}
 
-	.info-tx, .info-tx .info-tx-tx{
-		width: initial;
-	}
+	.info-tx, .info-tx .info-tx-tx{width: initial;}
 
 	footer{
 		padding-top: 20px;
 		padding-bottom: 20px;
 	}
 
-	.top-footer{
-		padding-bottom: 25px;
-	}
+	.top-footer{padding-bottom: 25px;}
 }
 
 @media screen and (max-width: 768px){
-	/*Главная картинка*/
-	.ots{
-		margin-top: 20px;
-	}
+	.ots{margin-top: 20px;}
 
-	.text{
-		font-size: 30px;
-	}
+	.text{font-size: 30px;}
 
-	.ots button{
-    	margin-top: 20px;
-	}
+	.ots button{margin-top: 20px;}
 
-	/*About Us*/
 	.line{
 		margin-top: 15px;
 		margin-bottom: 15px;
@@ -405,17 +484,11 @@ footer{
     	font-size: 17px;
 	}
 
-	.section, .section1{
-    	margin-top: 20px;
-	}
+	.section, .section1{margin-top: 20px;}
 
-	.section .pad{
-    	width: 90%;
-	}
+	.section .pad{width: 90%;}
 
-	.section .pad img {
-    	width: 10%;
-	}
+	.section .pad img {width: 10%;}
 
 	.text3{
 		margin: 0 auto;
@@ -423,27 +496,15 @@ footer{
 		font-size: 17px;
 	}
 
-	.section-heading{
-    	font-size: 25px;
-	}
+	.section-heading{font-size: 25px;}
 
-	/*Разработчики*/
-	.section1 .pad1 {
-    	width: 90%;
-	}
+	.section1 .pad1 {width: 90%;}
 
-	/*Do you like*/
-	.call-to-action{
-    	height: 145px;
-	}
+	.call-to-action{height: 145px;}
 
-	.tx-1{
-    	font-size: 18px;
-	}
+	.tx-1{font-size: 18px;}
 
-	.tx-2{
-    	font-size: 13px;
-	}
+	.tx-2{font-size: 13px;}
 
 	.p-button button{
     	width: initial;
@@ -451,21 +512,14 @@ footer{
     	padding: 10px;
 	}
 
-	/*footer*/
-	.info, .company, .others, .newsletter{
-    	width: 95%;
-	}
+	.info, .company, .others, .newsletter{width: 95%;}
 
-	.text-k{
-		float: none;
-	}
+	.text-k{float: none;}
 
 	.soc{
 		float: none;
 		margin-top: 10px;
 	}
 
-	.bottom-footer{
-		margin-top: 20px;
-	}
+	.bottom-footer{margin-top: 20px;}
 }
